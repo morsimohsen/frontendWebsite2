@@ -1,0 +1,669 @@
+* {
+   margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+}
+/* Header */
+
+header{
+    background-color:whitesmoke;
+    position: sticky;
+    padding: 10px 0;
+    top: 0;
+    z-index: 500;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1200px;
+  }
+}
+
+header .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+header .container .site-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.site-name h1{
+    text-transform: uppercase;
+    color: #1f386e;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header .container .site-name span{
+    display: block;
+    margin-top: 15px;
+    color: #1f386e;
+}
+header .container .site-name div {
+    color: gray;
+    font-weight: 600;
+    padding: 10px;
+}
+header nav ul{
+    list-style: none;
+    padding: 15px;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 50px;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #1f386e;
+    margin-top: 15px;
+    transition: color 0.5s;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: #e52f3c;
+    cursor: pointer;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #1f386e;
+}
+header nav ul li a:focus {
+    outline: none;
+        color: #e52f3c;
+
+}
+/***********************End Header********************/
+
+
+/************************Home*************************/
+section.home{
+    background-image: url(../images/houstonia_home_exterior4409_fdofsi.jpg);
+    height: 700px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.home div{
+    width: 500px;
+    margin:0 auto;
+    text-align: center;
+    padding-top: 150px;
+}
+section.home button {
+    background-color: #e52f3c;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 3px;
+    border: 0;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+section.home button:hover{
+    background-color: #1f386e;
+    cursor: pointer;
+}
+
+section.home button:active {
+    transform: translateY(2px);
+}
+
+section.home div h1{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+section.home div p{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: whitesmoke;
+    background-color:rgba(0,0,0,0.2);
+    padding: 15px;
+    line-height: 1.2;
+}
+
+/************************End Home*************************/
+
+/************************Esimate**************************/
+
+section.cost {
+    background-color: #1f386e;
+}
+section.cost .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1140px;
+}
+
+section.cost .container h3{
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 15px 0;
+}
+section.cost .container p{
+    color: whitesmoke;
+    padding-bottom: 15px;
+}
+
+section.cost .container button {
+    background-color: transparent;
+    color: whitesmoke;
+    border: 2px solid white;
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition-property: background-color;
+    transition-duration: 1s;
+    
+}
+section.cost .container button:hover {
+    background-color: whitesmoke;
+    color: #1f386e;
+    cursor: pointer;
+}
+section.cost .container .button-con {
+    text-align: right;
+}
+
+section.cost .container button:active {
+    transform: translateY(3px);
+}
+/************************End Esimate**********************/
+
+
+/************************About**********************/
+section.about {
+    padding: 100px 0;
+    background-color: #f3f3f3;
+}
+
+section.about .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+section.about .container .about-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section.about img {
+    border: 15px solid whitesmoke;
+}
+
+section.about .container h2 {
+    font-size: 35px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    border-bottom: 1px solid darkgray; 
+    padding-bottom: 5px;
+    position: relative;
+}
+
+section.about .container h2::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 8%;
+    height: 3px;
+    background-color: #e52f3c;
+    transition: all 1s;
+}
+
+section.about .container h2:hover::before {
+    width: 100%;
+    cursor: pointer;
+}
+
+section.about .container p {
+    padding: 20px 0;
+    color: gray;
+    line-height: 1.3;
+}
+
+section.about .container h3{
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+
+section.about .container ul{
+    list-style: none;
+}
+
+section.about .container ul li {
+    color: gray;
+    margin-bottom: 8px;
+}
+section.about .container ul li i{
+    color: #1f386e;
+    margin-right: 6px;
+    font-size: 13px;
+}
+
+/************************End About**********************/
+
+/************************Services**********************/
+section.services {
+    padding: 100px 0;
+}
+
+
+section.services .section-title h2 {
+    margin-bottom: 60px;
+    font-size: 35px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    border-bottom: 1px solid darkgray; 
+    padding-bottom: 5px;
+    position: relative;
+    
+}
+
+section.services .section-title h2::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 5%;
+    height: 3px;
+    background-color: #e52f3c;
+    transition: all 1s;
+}
+
+section.services .section-title h2:hover::before {
+    width: 100%;
+    cursor: pointer;
+}
+
+section.services .services-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+section.services .services-con .sec {
+    height: 400px;
+}
+
+section.services .services-con .sec img {
+    top: 0;
+    left: 0;
+   
+}
+
+section.services .services-con .sec h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+section.services .services-con .sec p{
+    line-height: 1.4;
+    color: gray;
+    font-size: 16px;
+}
+
+/************************End Services**********************/
+
+
+
+
+
+
+/****************Photos****************/
+section.photos {
+    padding: 100px 0;
+}
+
+section.photos .photo-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+section.photos h2 {
+    margin-bottom: 60px;
+    font-size: 35px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    border-bottom: 1px solid darkgray; 
+    padding-bottom: 5px;
+    position: relative;
+    
+}
+
+section.photos  h2::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 5%;
+    height: 3px;
+    background-color: #e52f3c;
+    transition: all 1s;
+}
+section.photos  h2:hover::before {
+    width: 100%;
+    cursor: pointer;
+}
+
+section.photos .container .sec {
+    position: relative;
+    height: 300px;
+}
+
+section.photos .container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.photos .container .sec div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.5s;
+    color: transparent;
+}
+section.photos .container .sec:hover div{
+    background-color: rgba(0,0,255,0.4);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+section.photos .container .sec div h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/****************End Photos****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************testimonials*****************************/
+
+
+
+
+
+section.testimonials{
+    padding: 100px 0;
+    
+}
+section.testimonials .testimonials-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+section.testimonials .testimonials-con .sections {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+section.testimonials .testimonials-con .sections img {
+    width: 64px;
+    height: 64px;
+    display: block;
+}
+section.testimonials .testimonials-con .sections p{
+    font-style: italic;
+    font-family: sans-serif;
+    color: #1f386e;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+section.testimonials .testimonials-con .sections .name {
+    font-family: sans-serif;
+    color: #1f386e;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+section.testimonials .section-title h2 {
+    margin-bottom: 60px;
+    font-size: 35px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    border-bottom: 1px solid darkgray; 
+    padding-bottom: 5px;
+    position: relative;
+    
+}
+
+section.testimonials .section-title h2::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 5%;
+    height: 3px;
+    background-color: #e52f3c;
+    transition: all 1s;
+}
+
+section.testimonials .section-title h2:hover::before {
+    width: 100%;
+    cursor: pointer;
+}
+
+/********************End testimonials********************************/
+
+
+
+
+
+
+
+
+
+
+
+/**************************contact us********************************/
+
+section.contact {
+    padding: 100px 0 60px 0;
+    background: #1f386e;
+    color: rgba(255,255,255,.65);
+}
+
+section.contact .container-f {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 150px;
+}
+section.contact .section-title h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09); 
+    padding-bottom: 5px;
+    position: relative;
+    color: whitesmoke;
+}
+
+section.contact .section-title h2::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 5%;
+    height: 3px;
+    background-color: #e52f3c;
+    transition: all 1s;
+}
+
+section.contact .section-title h2:hover::before {
+    width: 100%;
+    cursor: pointer;
+}
+
+section.contact .section-title p {
+    margin-bottom: 60px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+#contact-form .text-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.form-text {
+    display: inline;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #444;
+    background-color: whitesmoke;
+    background-image: none;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+.btn {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 15px 20px;
+    color: whitesmoke;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    transition:all 0.5s; 
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn:hover {
+    color: #1f386e;
+    background-color: whitesmoke;
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
+
+
+.row1 h3 {
+    margin-bottom: 80px;
+    top: 12px;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09); 
+    padding-bottom: 5px;
+    position: relative;
+    color: whitesmoke;
+}
+.row1 .con {
+    margin-bottom: 25px;
+}
+.row1 .con h4 {
+    text-transform: capitalize;
+    font-size: 16px;
+    color: whitesmoke;
+    font-family: inherit;
+}
+
+
+
+
+
+
+
+
+.container .social {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+    padding-top: 70px;
+
+}
+
+.container .social ul{
+    list-style: none;
+}
+
+.container .social ul li {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    padding-right: 40px;
+}
+.container .social ul li i {
+    font-size: 25px;
+    transition: color 0.5s;
+    color: darkgrey;
+}
+.container .social ul li i:hover {
+    color: whitesmoke;
+}
+/************************** End contact us***************************/
+
+
+
+
+
+
+
+
+
+
+/************************************Footer************************/
+footer {
+    padding: 30px 0;
+}
+footer .container {
+    text-align: center;
+    font-size: 16px;
+    font-family: initial;
+}
+
+
+/************************************end Footer************************/
